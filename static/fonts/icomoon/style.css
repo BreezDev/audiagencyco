@@ -1,0 +1,441 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6bd5q7');
+  src:  url('fonts/icomoon.eot?6bd5q7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6bd5q7') format('truetype'),
+    url('fonts/icomoon.woff?6bd5q7') format('woff'),
+    url('fonts/icomoon.svg?6bd5q7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location-dot:before {
+  content: "\e900";
+}
+.icon-share-nodes:before {
+  content: "\e901";
+}
+.icon-ig:before {
+  content: "\e902";
+}
+.icon-left-icon:before {
+  content: "\e903";
+}
+.icon-right-icon:before {
+  content: "\e904";
+}
+.icon-envelope:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e906";
+}
+.icon-check:before {
+  content: "\e907";
+}
+.icon-search-icon:before {
+  content: "\e908";
+}
+.icon-wrench:before {
+  content: "\e909";
+}
+.icon-union:before {
+  content: "\e90a";
+}
+.icon-start-up:before {
+  content: "\e90b";
+}
+.icon-software-development-1:before {
+  content: "\e90c";
+}
+.icon-self-development-3:before {
+  content: "\e90d";
+}
+.icon-review:before {
+  content: "\e90e";
+}
+.icon-quote:before {
+  content: "\e90f";
+}
+.icon-planning:before {
+  content: "\e910";
+}
+.icon-ownership:before {
+  content: "\e911";
+}
+.icon-medal:before {
+  content: "\e912";
+}
+.icon-medal-1:before {
+  content: "\e913";
+}
+.icon-market-share:before {
+  content: "\e914";
+}
+.icon-sampp:before {
+  content: "\e915";
+}
+.icon-icon-quote:before {
+  content: "\e916";
+}
+.icon-icon-dev:before {
+  content: "\e917";
+}
+.icon-netss:before {
+  content: "\e918";
+}
+.icon-hands:before {
+  content: "\e919";
+}
+.icon-expert:before {
+  content: "\e91a";
+}
+.icon-data-management-2:before {
+  content: "\e91b";
+}
+.icon-costumer:before {
+  content: "\e91c";
+}
+.icon-cloud-network:before {
+  content: "\e91d";
+}
+.icon-artificial-intelligence:before {
+  content: "\e91e";
+}
+.icon-ai:before {
+  content: "\e91f";
+}
+.icon-app-development:before {
+  content: "\e920";
+}
+.icon-blockchain:before {
+  content: "\e921";
+}
+.icon-contract:before {
+  content: "\e922";
+}
+.icon-deposit:before {
+  content: "\e923";
+}
+.icon-devops:before {
+  content: "\e924";
+}
+.icon-graduated:before {
+  content: "\e925";
+}
+.icon-Group-2773:before {
+  content: "\e926";
+}
+.icon-healthcare:before {
+  content: "\e927";
+}
+.icon-dev2:before {
+  content: "\e928";
+}
+.icon-medal-gif:before {
+  content: "\e929";
+}
+.icon-milestones:before {
+  content: "\e92a";
+}
+.icon-nanotechnology:before {
+  content: "\e92b";
+}
+.icon-product-development:before {
+  content: "\e92c";
+}
+.icon-reviews:before {
+  content: "\e92d";
+}
+.icon-store-management:before {
+  content: "\e92e";
+}
+.icon-verified:before {
+  content: "\e92f";
+}
+.icon-envelopes:before {
+  content: "\e930";
+}
+.icon-user:before {
+  content: "\e931";
+}
+.icon-arrow-rights:before {
+  content: "\e932";
+}
+.icon-arrow-right:before {
+  content: "\e933";
+}
+.icon-envelope2:before {
+  content: "\e934";
+}
+.icon-phones:before {
+  content: "\e935";
+}
+.icon-lock-keyhole:before {
+  content: "\e936";
+}
+.icon-artificial-intelligences:before {
+  content: "\e937";
+}
+.icon-backup:before {
+  content: "\e938";
+}
+.icon-cyber-attack:before {
+  content: "\e939";
+}
+.icon-cyber-security:before {
+  content: "\e93a";
+}
+.icon-datas:before {
+  content: "\e93b";
+}
+.icon-earth-globe:before {
+  content: "\e93c";
+}
+.icon-group:before {
+  content: "\e93d";
+}
+.icon-Icon-devs:before {
+  content: "\e93e";
+}
+.icon-infrastructure:before {
+  content: "\e93f";
+}
+.icon-local-area-network:before {
+  content: "\e940";
+}
+.icon-management:before {
+  content: "\e941";
+}
+.icon-medals-gif:before {
+  content: "\e942";
+}
+.icon-Play:before {
+  content: "\e943";
+}
+.icon-portfolio:before {
+  content: "\e944";
+}
+.icon-security:before {
+  content: "\e945";
+}
+.icon-self-development:before {
+  content: "\e946";
+}
+.icon-smart-grid:before {
+  content: "\e947";
+}
+.icon-des:before {
+  content: "\e948";
+}
+.icon-search2:before {
+  content: "\e94a";
+}
+.icon-start:before {
+  content: "\e94b";
+}
+.icon-check1:before {
+  content: "\e94c";
+}
+.icon-top:before {
+  content: "\e94d";
+}
+.icon-twiter:before {
+  content: "\e94e";
+}
+.icon-mail:before {
+  content: "\e951";
+}
+.icon-ins:before {
+  content: "\e953";
+}
+.icon-leftt:before {
+  content: "\e954";
+}
+.icon-yotube:before {
+  content: "\e955";
+}
+.icon-instagram:before {
+  content: "\e956";
+}
+.icon-facebook:before {
+  content: "\e957";
+}
+.icon-maps:before {
+  content: "\e959";
+}
+.icon-analysis:before {
+  content: "\e95a";
+}
+.icon-curve:before {
+  content: "\e95b";
+}
+.icon-data-science:before {
+  content: "\e95c";
+}
+.icon-data-security:before {
+  content: "\e95d";
+}
+.icon-planning-1:before {
+  content: "\e95e";
+}
+.icon-server:before {
+  content: "\e95f";
+}
+.icon-uni:before {
+  content: "\e960";
+}
+.icon-vector-dev:before {
+  content: "\e961";
+}
+.icon-plus:before {
+  content: "\e962";
+}
+.icon-angle-down:before {
+  content: "\e963";
+}
+.icon-angle-downs:before {
+  content: "\e964";
+}
+.icon-angle-right:before {
+  content: "\e965";
+}
+.icon-asterisk:before {
+  content: "\e967";
+}
+.icon-Check:before {
+  content: "\e968";
+}
+.icon-cloud-computing:before {
+  content: "\e969";
+}
+.icon-cloud-network-1:before {
+  content: "\e96a";
+}
+.icon-collaboration:before {
+  content: "\e96b";
+}
+.icon-costumer-11:before {
+  content: "\e96c";
+}
+.icon-customer-satisfaction-1:before {
+  content: "\e96d";
+}
+.icon-cyber-security-1:before {
+  content: "\e96e";
+}
+.icon-data-management-1:before {
+  content: "\e96f";
+}
+.icon-effectiveness:before {
+  content: "\e970";
+}
+.icon-envelope3:before {
+  content: "\e971";
+}
+.icon-fb:before {
+  content: "\e972";
+}
+.icon-frame:before {
+  content: "\e973";
+}
+.icon-chat:before {
+  content: "\e974";
+}
+.icon-Icon3:before {
+  content: "\e975";
+}
+.icon-Icon11:before {
+  content: "\e976";
+}
+.icon-Icon21:before {
+  content: "\e977";
+}
+.icon-in:before {
+  content: "\e978";
+}
+.icon-layers-1:before {
+  content: "\e979";
+}
+.icon-location-dot1:before {
+  content: "\e97a";
+}
+.icon-phone2:before {
+  content: "\e97b";
+}
+.icon-planning-2:before {
+  content: "\e97c";
+}
+.icon-project-management-1:before {
+  content: "\e97d";
+}
+.icon-right:before {
+  content: "\e97e";
+}
+.icon-search:before {
+  content: "\e97f";
+}
+.icon-self-development-2:before {
+  content: "\e980";
+}
+.icon-start-up-1-1:before {
+  content: "\e981";
+}
+.icon-technical-support-1:before {
+  content: "\e982";
+}
+.icon-tw:before {
+  content: "\e983";
+}
+.icon-Vector2:before {
+  content: "\e984";
+}
+.icon-ytb:before {
+  content: "\e985";
+}
+.icon-13:before {
+  content: "\e986";
+}
+.icon-star:before {
+  content: "\e987";
+}
+.icon-envelope4:before {
+  content: "\e988";
+}
+.icon-user1:before {
+  content: "\e989";
+}
+.icon-14:before {
+  content: "\e98a";
+}
+.icon-arrow-up:before {
+  content: "\e98b";
+}
+.icon-envelope5:before {
+  content: "\e98c";
+}
+.icon-phone3:before {
+  content: "\e98d";
+}
+.icon-15:before {
+  content: "\e98e";
+}
+.icon-angle-right1:before {
+  content: "\e98f";
+}
