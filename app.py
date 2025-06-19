@@ -115,6 +115,8 @@ def team():
     return render_template('team.html')
 
 
+# run it
+
 if __name__ == '__main__':
     init_db()
     app.run(debug=True)
