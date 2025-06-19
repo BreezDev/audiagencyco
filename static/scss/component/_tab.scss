@@ -1,0 +1,261 @@
+@use '../abstracts/' as *;
+
+.nav-tabs-project {
+    .nav-item {
+        .nav-link {
+            font-size: 18px;
+            font-weight: 500;
+            padding: unset;
+            background-color: unset;
+            border-radius: unset;
+            color: $text;
+            padding-bottom: 13px;
+            border-bottom: solid 2px $white;
+            margin: 0px 25px;
+
+            &.active {
+                color: $main;
+                font-weight: 600;
+                border-bottom: solid 2px $primary;
+            }
+        }
+    }
+}
+
+.nav-tabs-service {
+        gap: 67px;
+    .nav-item {
+        .nav-link {
+            padding: 7px 0px 25px 0px;
+            background-color: transparent;
+            border-radius: unset;
+            color: $main;
+            border-bottom: 1px solid rgba(0, 47, 245, 0.1);
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: -0.7px;
+            @include hover-a;
+            background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px);
+            &:hover{
+                background-size: 100% 100%;
+                color: $blue;
+
+            }
+
+            &.active {
+                border-bottom: 1px solid $blue;
+            }
+
+            i {
+                font-size: 50px;
+                color: $blue;
+                margin-right: 20px;
+            }
+
+        }
+    }
+}
+
+.nav-tabs-pricing{
+    &.nav-tabs-pricing-white{
+        .nav-item{
+            .nav-link{
+                color: $white;
+                &.active{
+                    border-bottom: 1px solid $primary;
+                    color: $primary;
+                }
+            }
+        }
+
+    }
+    &.nav-tabs-pricing-service{
+        .nav-link{
+            &.active{
+                color: $primary !important;
+                border-bottom: 1px solid $primary !important;
+            }
+        }
+    }
+    border-bottom: 1px solid $bsd-blue;
+    display: inline-flex;
+    .nav-item{
+        margin-right: 34px;
+        .nav-link{
+            padding: 15px 15px 9px 0px;
+            background-color: transparent;
+            border-radius: unset;
+            color: $main;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            i{
+                font-size: 15px;
+            }
+            &.active{
+                border-bottom: 1px solid $blue;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.tab-faq-page{
+    .nav-item{
+        margin-bottom: 10px;
+        &:not(:last-child){
+            margin-right: 18px;
+        }
+        .nav-link{
+            padding: 7px 21px;
+            background-color: $gray2;
+            color: $text;
+            &.active,&:hover{
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.tf-tabs {
+    .toggle-btn-tabs {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        background: $secondary;
+        border-radius: 100px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        .btn-tog.btn-1 {
+            position: absolute;
+            height:14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            z-index: 5;
+            cursor: pointer;
+            &.active {
+                z-index: 4;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 0px;
+                bottom: 0px;
+                background-color: #fff;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                border-radius: 50%;
+            }
+        }
+        .btn-tog.btn-2 {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            right: 3px;
+            bottom: 3px;
+            background-color: unset;
+            z-index: 5;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.tf-tabs .toggle-btn-tabs .btn-tog.btn-2.inactive,
+.tf-tabs .toggle-btn-tabs .btn-tog.btn-2 {
+    width: 100% !important;
+    z-index: 6;
+}
+
+.tf-tabs .toggle-btn-tabs .btn-tog.btn-1.inactive {
+    width: 100% !important;
+    z-index: 6;
+}
+
+.tf-tabs .toggle-btn-tabs .btn-tog.btn-2.active {
+    width: 32px;
+    z-index: 4;
+}
+
+.tf-tabs .toggle-btn-tabs .btn-tog.inactive.btn-1::after {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.tf-tabs .toggle-btn-tabs .btn-tog.active.btn-1::after {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.tf-tabs .toggle-btn-tabs.active { 
+    background: $primary;
+}
+
+.tf-tabs .toggle-btn-over {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tf-tabs .toggle-btn-over .text-toggle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $main;
+    padding: 0 20px;
+    i{
+        font-size: 12px;
+    }
+}
+.tf-tabs .tf-tabcontent {
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner {
+    display: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.tf-tabs .tf-tabnav ul > li .tab-title-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.tf-tabcontent:before,
+.tf-tabcontent:after {
+    display: table;
+    content: "";
+}
+
+.tf-tabcontent:after {
+    clear: both;
+}
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.active,
+.tf-tabs .tf-tabcontent .tf-tabcontent-inner.set-active-tab {
+    display: block;
+}

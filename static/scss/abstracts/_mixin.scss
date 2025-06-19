@@ -1,0 +1,233 @@
+@use './variables' as *;
+
+
+@mixin transition3 () {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+@mixin transitionY () {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin transitionY3 () {
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+@mixin transitionY0 () {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@mixin absolute {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+@mixin absolute1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin icon {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+@mixin text-two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@mixin text-three {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@mixin bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bg-image-ct {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin bg-image-top {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin breakpoint($point) {
+    @if $point==xsmall {
+        @media (min-width: 450px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xxsmall {
+        @media (max-width:450px) {
+            @content ;
+        }
+    }
+
+    @if $point==xxs {
+        @media (min-width: 470px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xxs {
+        @media (max-width:470px) {
+            @content ;
+        }
+    }
+
+    @if $point==xs {
+        @media (min-width: 500px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xs {
+        @media (max-width: 500px) {
+            @content ;
+        }
+    }
+
+    @if $point==sm {
+        @media (min-width: 576px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-sm {
+        @media (max-width: 575px) {
+            @content ;
+        }
+    }
+
+    @else if $point==md {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-md {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+
+    @else if $point==lg {
+        @media (min-width: 992px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-lg {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+
+    @else if $point==xl {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xl {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+
+    @else if $point==xxl {
+        @media (min-width: 1400px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xxl {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+
+    @else if $point==xxxl {
+        @media (min-width: 1600px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xxxl {
+        @media (max-width: 1600px) {
+            @content ;
+        }
+    }
+
+    @else if $point==xl4 {
+        @media (min-width: 1899px) {
+            @content ;
+        }
+    }
+
+    @else if $point==max-xl4 {
+        @media (max-width: 1899px) {
+            @content ;
+        }
+    }
+}
+
+@mixin transition {
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin hover-a {
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-image: linear-gradient(transparent calc(100% - 2px), currentColor 1px);
+    transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    background-size: 0 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
