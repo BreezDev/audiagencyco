@@ -1,8 +1,8 @@
 <?php
 
-// define("WEBMASTER_EMAIL", 'themesflat@gmail.com');
+// define("WEBMASTER_EMAIL", 'admin@audiagency.co.site');
 //$address = "example@themeforest.net";
-$address = "themesflat@gmail.com";
+$address = "admin@audiagency.co.site";
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $error = false;
