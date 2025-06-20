@@ -96,7 +96,7 @@
                                     <div class="header-left flex">
                                         <div class="logo-box">
                                             <div class="logo">
-                                                <a href="index.html">
+                                                <a href="{{ url_for('index') }}">
                                                     <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo">
                                                 </a>
                                             </div>
@@ -110,60 +110,60 @@
                                                         <li class="dropdown2">
                                                             <a href="#">Home</a>
                                                             <ul>
-                                                                <li><a href="index.html">Home 01</a></li>
-                                                                <li><a href="home2.html">Home 02</a></li>
-                                                                <li><a href="home3.html">Home 03</a></li>
-                                                                <li><a href="home4.html">Home 04</a></li>
-                                                                <li><a href="home5.html">Home 05</a></li>
-                                                                <li><a href="home6.html">Home 06</a></li>
+                                                                <li><a href="{{ url_for('index') }}">Home 01</a></li>
+                                                                <li><a href="{{ url_for('home2') }}">Home 02</a></li>
+                                                                <li><a href="{{ url_for('home3') }}">Home 03</a></li>
+                                                                <li><a href="{{ url_for('home4') }}">Home 04</a></li>
+                                                                <li><a href="{{ url_for('home5') }}">Home 05</a></li>
+                                                                <li><a href="{{ url_for('home6') }}">Home 06</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2"><a href="#">Company</a>
                                                             <ul>
-                                                                <li><a href="about-company.html">About Company</a>
+                                                                <li><a href="{{ url_for('about') }}">About Company</a>
                                                                 </li>
-                                                                <li><a href="team.html">Team Member</a></li>
-                                                                <li><a href="team-details.html">Team Details</a>
+                                                                <li><a href="{{ url_for('team') }}">Team Member</a></li>
+                                                                <li><a href="{{ url_for('team_details') }}">Team Details</a>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2 current">
                                                             <a href="#">Service</a>
                                                             <ul>
-                                                                <li><a href="service1.html">Service 01</a></li>
-                                                                <li class="current"><a href="service2.html">Service
+                                                                <li><a href="{{ url_for('service1') }}">Service 01</a></li>
+                                                                <li class="current"><a href="{{ url_for('service2') }}">Service
                                                                         02</a></li>
-                                                                <li><a href="service-details.html">Service Details</a>
+                                                                <li><a href="{{ url_for('servicedetails') }}">Service Details</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
 
                                                         <li class="dropdown2"><a href="#">Project Grid</a>
                                                             <ul>
-                                                                <li><a href="project-grid.html">Project Grid</a></li>
-                                                                <li><a href="project-mansory.html">Project Masonry</a>
+                                                                <li><a href="{{ url_for('projectgrid') }}">Project Grid</a></li>
+                                                                <li><a href="{{ url_for('projectmansory') }}">Project Masonry</a>
                                                                 </li>
-                                                                <li><a href="project-slider.html">Project Slider</a>
+                                                                <li><a href="{{ url_for('projectslider') }}">Project Slider</a>
                                                                 </li>
-                                                                <li><a href="project-details.html">Project Details</a>
+                                                                <li><a href="{{ url_for('project') }}">Project Details</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2"><a href="#">Page</a>
                                                             <ul>
-                                                                <li><a href="faq.html">Faq Page</a></li>
-                                                                <li><a href="pricing.html">Price Page</a></li>
-                                                                <li><a href="404.html">404 Page</a></li>
+                                                                <li><a href="{{ url_for('faq') }}">Faq Page</a></li>
+                                                                <li><a href="{{ url_for('pricing') }}">Price Page</a></li>
+                                                                <li><a href="{{ url_for('error') }}">404 Page</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2">
                                                             <a href="#">Blog</a>
                                                             <ul>
-                                                                <li><a href="blog.html">Blog Full</a></li>
-                                                                <li><a href="blog-style2.html">Blog List</a></li>
-                                                                <li><a href="blog-details.html">Blog Detail</a></li>
+                                                                <li><a href="{{ url_for('blog') }}">Blog Full</a></li>
+                                                                <li><a href="{{ url_for('blog_style2') }}">Blog List</a></li>
+                                                                <li><a href="{{ url_for('blog_single') }}">Blog Detail</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="contact-us.html">Contact</a></li>
+                                                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -205,7 +205,7 @@
                 <div class="mobile-menu">
                     <div class="menu-backdrop"></div>
                     <nav class="menu-box">
-                        <div class="nav-logo"><a href="index.html">
+                        <div class="nav-logo"><a href="{{ url_for('index') }}">
                                 <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                         <div class="bottom-canvas">
                             <div class="menu-outer">
@@ -227,7 +227,7 @@
                                 <div class="title-inner center">
                                     <h1 class="title text-white mb-18">Popular Services</h1>
                                     <div class="title-group text-white">
-                                        <a href="index.html">Home</a>
+                                        <a href="{{ url_for('index') }}">Home</a>
                                         <a href="#">Services</a>
                                     </div>
                                 </div>
@@ -366,12 +366,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Design <span class="number">01</span></p>
-                                            <h3 class="title"><a href="service-details.html">Provide Professional Web Design</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Provide Professional Web Design</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
 
                                     </div>
@@ -381,12 +381,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Development <span class="number">02</span></p>
-                                            <h3 class="title"><a href="service-details.html">Provide Professional Web Development</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Provide Professional Web Development</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three">
@@ -395,12 +395,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Marketing <span class="number">03</span></p>
-                                            <h3 class="title"><a href="service-details.html">Digital Marketing Strategy</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Digital Marketing Strategy</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three">
@@ -409,12 +409,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Motion Design <span class="number">04</span></p>
-                                            <h3 class="title"><a href="service-details.html">3D Design, Motions & Animations</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">3D Design, Motions & Animations</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three">
@@ -423,18 +423,18 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Content <span class="number">05</span></p>
-                                            <h3 class="title"><a href="service-details.html">Content Writing & Email Marketing</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Content Writing & Email Marketing</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 center">
-                                <a href="service1.html" class="button-src">View All Services <i class="icon-angle-right"></i></a>
+                                <a href="{{ url_for('service1') }}" class="button-src">View All Services <i class="icon-angle-right"></i></a>
                             </div>
                         </div>
                     </div>

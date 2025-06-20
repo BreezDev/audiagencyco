@@ -95,7 +95,7 @@
                                     <div class="header-left flex">
                                         <div class="logo-box">
                                             <div class="logo">
-                                                <a href="index.html">
+                                                <a href="{{ url_for('index') }}">
                                                     <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo">
                                                 </a>
                                             </div>
@@ -109,56 +109,56 @@
                                                         <li class="dropdown2">
                                                             <a href="#">Home</a>
                                                             <ul>
-                                                                <li><a href="index.html">Home 01</a></li>
-                                                                <li><a href="home2.html">Home 02</a></li>
-                                                                <li><a href="home3.html">Home 03</a></li>
-                                                                <li><a href="home4.html">Home 04</a></li>
-                                                                <li><a href="home5.html">Home 05</a></li>
-                                                                <li><a href="home6.html">Home 06</a></li>
+                                                                <li><a href="{{ url_for('index') }}">Home 01</a></li>
+                                                                <li><a href="{{ url_for('home2') }}">Home 02</a></li>
+                                                                <li><a href="{{ url_for('home3') }}">Home 03</a></li>
+                                                                <li><a href="{{ url_for('home4') }}">Home 04</a></li>
+                                                                <li><a href="{{ url_for('home5') }}">Home 05</a></li>
+                                                                <li><a href="{{ url_for('home6') }}">Home 06</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2"><a href="#">Company</a>
                                                             <ul>
-                                                                <li><a href="about-company.html">About Company</a>
+                                                                <li><a href="{{ url_for('about') }}">About Company</a>
                                                                 </li>
-                                                                <li><a href="team.html">Team Member</a></li>
-                                                                <li><a href="team-details.html">Team Details</a>
+                                                                <li><a href="{{ url_for('team') }}">Team Member</a></li>
+                                                                <li><a href="{{ url_for('team_details') }}">Team Details</a>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2">
                                                             <a href="#">Service</a>
                                                             <ul>
-                                                                <li><a href="service1.html">Service 01</a></li>
-                                                                <li><a href="service2.html">Service 02</a></li>
-                                                                <li><a href="service-details.html">Service Details</a></li>
+                                                                <li><a href="{{ url_for('service1') }}">Service 01</a></li>
+                                                                <li><a href="{{ url_for('service2') }}">Service 02</a></li>
+                                                                <li><a href="{{ url_for('servicedetails') }}">Service Details</a></li>
                                                             </ul>
                                                         </li>
                                                         
                                                         <li class="dropdown2 current"><a href="#">Project Grid</a>
                                                             <ul>
-                                                                <li class="current"><a href="project-grid.html">Project Grid</a></li>
-                                                                <li><a href="project-mansory.html">Project Masonry</a></li>
-                                                                <li><a href="project-slider.html">Project Slider</a></li>
-                                                                <li><a href="project-details.html">Project Details</a></li>
+                                                                <li class="current"><a href="{{ url_for('projectgrid') }}">Project Grid</a></li>
+                                                                <li><a href="{{ url_for('projectmansory') }}">Project Masonry</a></li>
+                                                                <li><a href="{{ url_for('projectslider') }}">Project Slider</a></li>
+                                                                <li><a href="{{ url_for('project') }}">Project Details</a></li>
                                                             </ul>
                                                         </li>
                                                         
                                                         <li class="dropdown2"><a href="#">Page</a>
                                                             <ul>
-                                                                <li><a href="faq.html">Faq Page</a></li>
-                                                                <li><a href="pricing.html">Price Page</a></li>
-                                                                <li><a href="404.html">404 Page</a></li>
+                                                                <li><a href="{{ url_for('faq') }}">Faq Page</a></li>
+                                                                <li><a href="{{ url_for('pricing') }}">Price Page</a></li>
+                                                                <li><a href="{{ url_for('error') }}">404 Page</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2">
                                                             <a href="#">Blog</a>
                                                             <ul>
-                                                                <li><a href="blog.html">Blog Full</a></li>
-                                                                <li><a href="blog-style2.html">Blog List</a></li>
-                                                                <li><a href="blog-details.html">Blog Detail</a></li>
+                                                                <li><a href="{{ url_for('blog') }}">Blog Full</a></li>
+                                                                <li><a href="{{ url_for('blog_style2') }}">Blog List</a></li>
+                                                                <li><a href="{{ url_for('blog_single') }}">Blog Detail</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="contact-us.html">Contact</a></li>
+                                                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -199,7 +199,7 @@
                 <div class="mobile-menu">
                     <div class="menu-backdrop"></div>
                     <nav class="menu-box">
-                        <div class="nav-logo"><a href="index.html">
+                        <div class="nav-logo"><a href="{{ url_for('index') }}">
                                 <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                         <div class="bottom-canvas">
                             <div class="menu-outer">
@@ -220,7 +220,7 @@
                                 <div class="title-inner center">
                                     <h1 class="title text-white mb-18">Project Grid</h1>
                                     <div class="title-group text-white">
-                                        <a href="index.html">Home</a>
+                                        <a href="{{ url_for('index') }}">Home</a>
                                         <a href="#">Project Grid</a>
                                     </div>
                                 </div>
@@ -266,7 +266,7 @@
                                         aria-labelledby="show-all-tab" tabindex="0">
                                         <div class="grid-col-project">
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid1.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -276,10 +276,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -287,7 +287,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid2.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -297,10 +297,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Digital Product Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Digital Product Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -308,7 +308,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid3.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -318,10 +318,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Mobile Apps</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Mobile Apps Development</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Mobile Apps Development</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -329,7 +329,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid4.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -339,10 +339,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Product</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Marketing For Digital Product</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Marketing For Digital Product</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -350,7 +350,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid5.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -360,10 +360,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Engineering</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Private Trust Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Private Trust Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -371,7 +371,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid6.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -381,10 +381,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Software</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Website Design & Development </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Website Design & Development </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -392,7 +392,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid7.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -402,10 +402,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">IT Management & Research</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">IT Management & Research</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -413,7 +413,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid8.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -423,10 +423,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -434,7 +434,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid9.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -444,10 +444,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Strategy</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Development Strategy </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Development Strategy </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -460,7 +460,7 @@
                                         aria-labelledby="business-tab" tabindex="0">
                                         <div class="grid-col-project">
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid1.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -470,10 +470,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -481,7 +481,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid2.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -491,10 +491,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Digital Product Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Digital Product Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -502,7 +502,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid3.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -512,10 +512,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Mobile Apps</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Mobile Apps Development</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Mobile Apps Development</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -523,7 +523,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid4.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -533,10 +533,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Product</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Marketing For Digital Product</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Marketing For Digital Product</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -544,7 +544,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid5.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -554,10 +554,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Engineering</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Private Trust Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Private Trust Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -565,7 +565,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid6.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -575,10 +575,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Software</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Website Design & Development </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Website Design & Development </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -586,7 +586,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid7.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -596,10 +596,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">IT Management & Research</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">IT Management & Research</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -607,7 +607,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid8.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -617,10 +617,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -628,7 +628,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid9.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -638,10 +638,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Strategy</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Development Strategy </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Development Strategy </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -654,7 +654,7 @@
                                         aria-labelledby="cyber-tab" tabindex="0">
                                         <div class="grid-col-project">
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid1.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -664,10 +664,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -675,7 +675,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid2.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -685,10 +685,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Digital Product Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Digital Product Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -696,7 +696,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid3.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -706,10 +706,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Mobile Apps</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Mobile Apps Development</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Mobile Apps Development</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -717,7 +717,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid4.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -727,10 +727,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Product</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Marketing For Digital Product</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Marketing For Digital Product</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -738,7 +738,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid5.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -748,10 +748,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Engineering</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Private Trust Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Private Trust Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -759,7 +759,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid6.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -769,10 +769,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Software</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Website Design & Development </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Website Design & Development </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -780,7 +780,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid7.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -790,10 +790,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">IT Management & Research</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">IT Management & Research</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -801,7 +801,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid8.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -811,10 +811,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -822,7 +822,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid9.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -832,10 +832,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Strategy</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Development Strategy </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Development Strategy </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -848,7 +848,7 @@
                                         aria-labelledby="develope-tab" tabindex="0">
                                         <div class="grid-col-project">
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid1.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -858,10 +858,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -869,7 +869,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid2.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -879,10 +879,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Digital Product Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Digital Product Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -890,7 +890,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid3.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -900,10 +900,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Mobile Apps</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Mobile Apps Development</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Mobile Apps Development</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -911,7 +911,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid4.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -921,10 +921,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Product</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Marketing For Digital Product</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Marketing For Digital Product</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -932,7 +932,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid5.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -942,10 +942,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Engineering</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Private Trust Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Private Trust Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -953,7 +953,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid6.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -963,10 +963,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Software</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Website Design & Development </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Website Design & Development </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -974,7 +974,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid7.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -984,10 +984,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">IT Management & Research</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">IT Management & Research</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -995,7 +995,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid8.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1005,10 +1005,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1016,7 +1016,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid9.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1026,10 +1026,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Strategy</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Development Strategy </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Development Strategy </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1042,7 +1042,7 @@
                                         aria-labelledby="brand-tab" tabindex="0">
                                         <div class="grid-col-project">
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid1.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1052,10 +1052,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1063,7 +1063,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid2.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1073,10 +1073,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Digital Product Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Digital Product Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1084,7 +1084,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid3.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1094,10 +1094,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Mobile Apps</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Mobile Apps Development</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Mobile Apps Development</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1105,7 +1105,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid4.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1115,10 +1115,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Product</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Marketing For Digital Product</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Marketing For Digital Product</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1126,7 +1126,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid5.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1136,10 +1136,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Engineering</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Private Trust Management</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Private Trust Management</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1147,7 +1147,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid6.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1157,10 +1157,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Software</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Website Design & Development </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Website Design & Development </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1168,7 +1168,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid7.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1178,10 +1178,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">IT Management & Research</a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">IT Management & Research</a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1189,7 +1189,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid8.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1199,10 +1199,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Research</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Website Design </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Website Design </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
@@ -1210,7 +1210,7 @@
                                                 </div>
                                             </div>
                                             <div class="tf-image-box">
-                                                <a href="project-details.html" class="image relative overflow-hiden">
+                                                <a href="{{ url_for('project') }}" class="image relative overflow-hiden">
                                                     <img src="./assets/images/project/pj-grid9.jpg" alt="image">
                                                 </a>
                                                 <div class="content flex-two">
@@ -1220,10 +1220,10 @@
                                                             <div class="line"></div>
                                                             <span class="category font-man">Strategy</span>
                                                         </div>
-                                                        <h3 class="title"><a href="project-details.html">Business Development Strategy </a></h3>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Business Development Strategy </a></h3>
                         
                                                     </div>
-                                                    <a href="project-details.html" class="icon flex-five">
+                                                    <a href="{{ url_for('project') }}" class="icon flex-five">
                                                         <i class="icon-angle-downs"></i>
                                                     </a>
                                                     
