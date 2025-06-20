@@ -9,11 +9,11 @@
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/images/favico.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/favico.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favico.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='images/favico.png') }}">
 
 </head>
 
@@ -96,7 +96,7 @@
                                         <div class="logo-box">
                                             <div class="logo">
                                                 <a href="index.html">
-                                                    <img src="assets/images/logo2.png" alt="Logo">
+                                                    <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo">
                                                 </a>
                                             </div>
                                         </div>
@@ -200,7 +200,7 @@
                     <div class="menu-backdrop"></div>
                     <nav class="menu-box">
                         <div class="nav-logo"><a href="index.html">
-                                <img src="assets/images/logo-footer.png" alt=""></a></div>
+                                <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                         <div class="bottom-canvas">
                             <div class="menu-outer">
                             </div>
@@ -516,7 +516,7 @@
                     <div class="row footer-top flex-three">
                         <div class="col-md-3">
                             <a href="#" class="logo-footer">
-                                <img src="./assets/images/logo-footer.png" alt="">
+                                <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt="">
                             </a>
                         </div>
                         <div class="col-md-9">

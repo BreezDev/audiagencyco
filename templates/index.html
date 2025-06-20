@@ -9,13 +9,13 @@
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="app/css/app.css">
-    <link rel="stylesheet" href="app/css/textanimation.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/textanimation.css') }}">
 
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/images/favico.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/favico.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favico.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='images/favico.png') }}">
 
 </head>
 
@@ -98,7 +98,7 @@
                                             <div class="logo-box">
                                                 <div class="logo">
                                                     <a href="index.html">
-                                                        <img src="assets/images/logo-footer.png" alt="Logo">
+                                                        <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt="Logo">
                                                     </a>
                                                 </div>
                                             </div>
@@ -208,7 +208,7 @@
                         <div class="menu-backdrop"></div>
                         <nav class="menu-box">
                             <div class="nav-logo"><a href="index.html">
-                                    <img src="assets/images/logo-footer.png" alt=""></a></div>
+                                    <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                             <div class="bottom-canvas">
                                 <div class="menu-outer">
                                 </div>
@@ -739,19 +739,19 @@
                                                 <div class="flex-three">
                                                     <ul class="image-list flex-three">
                                                         <li>
-                                                            <img src="./assets/images/avata/avt-team1.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-team1.jpg') }}"
                                                                 alt="Image list">
                                                         </li>
                                                         <li>
-                                                            <img src="./assets/images/avata/avt-team2.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-team2.jpg') }}"
                                                                 alt="Image list">
                                                         </li>
                                                         <li>
-                                                            <img src="./assets/images/avata/avt-team3.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-team3.jpg') }}"
                                                                 alt="Image list">
                                                         </li>
                                                         <li>
-                                                            <img src="./assets/images/avata/avt-team4.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-team4.jpg') }}"
                                                                 alt="Image list">
                                                         </li>
                                                     </ul>
@@ -1101,13 +1101,13 @@
                         <div class="cta-right bg-5 flex-three flex-wrap">
                             <ul class="image-list flex-three">
                                 <li>
-                                    <img src="./assets/images/avata/avt1.jpg" alt="Image list">
+                                    <img src="{{ url_for('static', filename='images/avata/avt1.jpg') }}" alt="Image list">
                                 </li>
                                 <li>
-                                    <img src="./assets/images/avata/avt2.jpg" alt="Image list">
+                                    <img src="{{ url_for('static', filename='images/avata/avt2.jpg') }}" alt="Image list">
                                 </li>
                                 <li>
-                                    <img src="./assets/images/avata/avt3.jpg" alt="Image list">
+                                    <img src="{{ url_for('static', filename='images/avata/avt3.jpg') }}" alt="Image list">
                                 </li>
                                 <li>
                                     <i class="icon-plus"></i>
@@ -1149,7 +1149,7 @@
                                                     </p>
                                                     <div class="testimonial-profile relative flex-three">
                                                         <div class="image">
-                                                            <img src="./assets/images/avata/avt-profile.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-profile.jpg') }}"
                                                                 alt="image">
                                                         </div>
                                                         <div class="content">
@@ -1177,7 +1177,7 @@
                                                     <div class="testimonial-profile relative">
                                                         <div class="flex-three">
                                                             <div class="image">
-                                                                <img src="./assets/images/avata/avt2.jpg" alt="image">
+                                                                <img src="{{ url_for('static', filename='images/avata/avt2.jpg') }}" alt="image">
                                                             </div>
                                                             <div class="content">
                                                                 <h5 class="name">Michael J. Heath</h5>
@@ -1207,7 +1207,7 @@
                                                     <div class="testimonial-profile relative">
                                                         <div class="flex-three">
                                                             <div class="image">
-                                                                <img src="./assets/images/avata/avt-team4.jpg"
+                                                                <img src="{{ url_for('static', filename='images/avata/avt-team4.jpg') }}"
                                                                     alt="image">
                                                             </div>
                                                             <div class="content ">
@@ -1237,7 +1237,7 @@
                                                     </p>
                                                     <div class="testimonial-profile relative flex-three">
                                                         <div class="image">
-                                                            <img src="./assets/images/avata/avt-profile.jpg"
+                                                            <img src="{{ url_for('static', filename='images/avata/avt-profile.jpg') }}"
                                                                 alt="image">
                                                         </div>
                                                         <div class="content">
@@ -1265,7 +1265,7 @@
                                                     <div class="testimonial-profile relative">
                                                         <div class="flex-three">
                                                             <div class="image">
-                                                                <img src="./assets/images/avata/avt2.jpg" alt="image">
+                                                                <img src="{{ url_for('static', filename='images/avata/avt2.jpg') }}" alt="image">
                                                             </div>
                                                             <div class="content">
                                                                 <h5 class="name">Michael J. Heath</h5>
@@ -1295,7 +1295,7 @@
                                                     <div class="testimonial-profile relative">
                                                         <div class="flex-three">
                                                             <div class="image">
-                                                                <img src="./assets/images/avata/avt-team4.jpg"
+                                                                <img src="{{ url_for('static', filename='images/avata/avt-team4.jpg') }}"
                                                                     alt="image">
                                                             </div>
                                                             <div class="content ">
@@ -1514,7 +1514,7 @@
                     <div class="tf-container relative z-index-3">
                         <div class="footer-main  flex">
                             <div class="footer-main-item logo-footer wow fadeInUpSmall" data-wow-delay=".2s">
-                                <img src="./assets/images/logo2.png" alt="image" class="logo">
+                                <img src="./{{ url_for('static', filename='images/logo2.png') }}" alt="image" class="logo">
                                 <p class="des font-man">Sed ut persiciatis unde omnis natus
                                     voluptatem accusantium dolore</p>
                                 <div class="follow-social">

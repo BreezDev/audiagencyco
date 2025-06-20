@@ -9,12 +9,12 @@
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="app/css/app.css">
-    <link rel="stylesheet" href="app/css/map.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/map.min.css') }}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/images/favico.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/favico.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favico.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename='images/favico.png') }}">
 
 </head>
 
@@ -50,7 +50,7 @@
                                         <div class="logo-box">
                                             <div class="logo">
                                                 <a href="index.html">
-                                                    <img src="assets/images/logo-footer3.png" alt="Logo">
+                                                    <img src="{{ url_for('static', filename='images/logo-footer3.png') }}" alt="Logo">
                                                 </a>
                                             </div>
                                         </div>
@@ -146,7 +146,7 @@
                     <div class="menu-backdrop"></div>
                     <nav class="menu-box">
                         <div class="nav-logo"><a href="index.html">
-                                <img src="assets/images/logo-footer.png" alt=""></a></div>
+                                <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                         <div class="bottom-canvas">
                             <div class="menu-outer">
                             </div>
@@ -344,16 +344,16 @@
                                     <div class="flex-three image-wrap">
                                         <ul class="image-list flex-three">
                                             <li>
-                                                <img src="./assets/images/avata/avt1.jpg" alt="Image list">
+                                                <img src="{{ url_for('static', filename='images/avata/avt1.jpg') }}" alt="Image list">
                                             </li>
                                             <li>
-                                                <img src="./assets/images/avata/avt2.jpg" alt="Image list">
+                                                <img src="{{ url_for('static', filename='images/avata/avt2.jpg') }}" alt="Image list">
                                             </li>
                                             <li>
-                                                <img src="./assets/images/avata/avt3.jpg" alt="Image list">
+                                                <img src="{{ url_for('static', filename='images/avata/avt3.jpg') }}" alt="Image list">
                                             </li>
                                             <li>
-                                                <img src="./assets/images/avata/avt4.jpg" alt="Image list">
+                                                <img src="{{ url_for('static', filename='images/avata/avt4.jpg') }}" alt="Image list">
                                             </li>
                                         </ul>
                                         <div class="content-image">
@@ -1211,7 +1211,7 @@
                                         <img src="./assets/images/avata/h212.jpg" alt="Image list">
                                     </li>
                                     <li>
-                                        <img src="./assets/images/avata/h210.jpg" alt="Image list">
+                                        <img src="{{ url_for('static', filename='images/avata/h210.jpg') }}" alt="Image list">
                                     </li>
                                 </ul>
                                 <div class="service-cta ">
