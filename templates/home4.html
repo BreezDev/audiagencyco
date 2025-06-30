@@ -194,11 +194,11 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="image relative">
-                                    <img src="./assets/images/page/mask-home4.png" alt="image" class="image1">
-                                    <img src="./assets/images/page/tag.png" alt="image" class="image2">
-                                    <img src="./assets/images/page/html-5.png" alt="image" class="image3">
-                                    <img src="./assets/images/page/mask-home4.jpg" alt="image" class="image4">
-                                    <img src="./assets/images/page/cycle-mask.png" alt="image" class="image5">
+                                    <img src="{{ url_for('static', filename='images/page/mask-home4.png') }}" alt="image" class="image1">
+                                    <img src="{{ url_for('static', filename='images/page/tag.png') }}" alt="image" class="image2">
+                                    <img src="{{ url_for('static', filename='images/page/html-5.png') }}" alt="image" class="image3">
+                                    <img src="{{ url_for('static', filename='images/page/mask-home4.jpg') }}" alt="image" class="image4">
+                                    <img src="{{ url_for('static', filename='images/page/cycle-mask.png') }}" alt="image" class="image5">
                                 </div>
                             </div>
                         </div>
@@ -286,9 +286,9 @@
                             <div class="col-md-6">
                                 <div class="can-do-it-image relative">
                                     <div class="elip"></div>
-                                    <img src="./assets/images/page/image-feature-h41.jpg" alt="image"
+                                    <img src="{{ url_for('static', filename='images/page/image-feature-h41.jpg') }}" alt="image"
                                         class="cdit-image">
-                                    <img src="./assets/images/page/image-feature-h42.jpg" alt="image"
+                                    <img src="{{ url_for('static', filename='images/page/image-feature-h42.jpg') }}" alt="image"
                                         class="cdit-image1">
                                     <div class="quote-feature-wrap">
                                         <div class="counter tf-counter">
@@ -406,7 +406,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="image-box3-image">
-                                                    <img src="./assets/images/image-box/feature1.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/image-box/feature1.jpg') }}" alt="image">
                                                 </div>
 
                                             </div>
@@ -434,7 +434,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="image-box3-image">
-                                                    <img src="./assets/images/image-box/feature.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/image-box/feature.jpg') }}" alt="image">
                                                 </div>
 
                                             </div>
@@ -462,7 +462,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="image-box3-image">
-                                                    <img src="./assets/images/image-box/feature1.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/image-box/feature1.jpg') }}" alt="image">
                                                 </div>
 
                                             </div>
@@ -490,7 +490,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="image-box3-image">
-                                                    <img src="./assets/images/image-box/feature.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/image-box/feature.jpg') }}" alt="image">
                                                 </div>
 
                                             </div>
@@ -587,8 +587,8 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="tab-service-image relative">
-                                                    <img src="./assets/images/service/service-h41.jpg" alt="image">
-                                                    <img src="./assets/images/service/service-h42.jpg" alt="image"
+                                                    <img src="{{ url_for('static', filename='images/service/service-h41.jpg') }}" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/service/service-h42.jpg') }}" alt="image"
                                                         class="service1">
                                                     <div class="clip"></div>
                                                 </div>
@@ -630,8 +630,8 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="tab-service-image relative">
-                                                    <img src="./assets/images/service/service-h41.jpg" alt="image">
-                                                    <img src="./assets/images/service/service-h42.jpg" alt="image"
+                                                    <img src="{{ url_for('static', filename='images/service/service-h41.jpg') }}" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/service/service-h42.jpg') }}" alt="image"
                                                         class="service1">
                                                     <div class="clip"></div>
                                                 </div>
@@ -673,8 +673,8 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="tab-service-image relative">
-                                                    <img src="./assets/images/service/service-h41.jpg" alt="image">
-                                                    <img src="./assets/images/service/service-h42.jpg" alt="image"
+                                                    <img src="{{ url_for('static', filename='images/service/service-h41.jpg') }}" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/service/service-h42.jpg') }}" alt="image"
                                                         class="service1">
                                                     <div class="clip"></div>
                                                 </div>
@@ -716,8 +716,8 @@
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="tab-service-image relative">
-                                                    <img src="./assets/images/service/service-h41.jpg" alt="image">
-                                                    <img src="./assets/images/service/service-h42.jpg" alt="image"
+                                                    <img src="{{ url_for('static', filename='images/service/service-h41.jpg') }}" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/service/service-h42.jpg') }}" alt="image"
                                                         class="service1">
                                                     <div class="clip"></div>
                                                 </div>
@@ -786,8 +786,13 @@
                                         <p class="job">Senior Consultant</p>
                                     </div>
                                     <div class="image relative">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a href="{{ url_for('team_details') }}">
                                             <img src="./assets/images/team/team1.jpg" alt="image">
+<!-- ======= -->
+                                        <a href="team-details.html">
+                                            <img src="{{ url_for('static', filename='images/team/team1.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         </a>                                       
                                         <ul class="social-team flex-five bg-8">
                                             <li>
@@ -815,8 +820,13 @@
                                         <p class="job">App Developer</p>
                                     </div>
                                     <div class="image relative">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a href="{{ url_for('team_details') }}">
                                             <img src="./assets/images/team/team2.jpg" alt="image">
+<!-- ======= -->
+                                        <a href="team-details.html">
+                                            <img src="{{ url_for('static', filename='images/team/team2.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         </a>                                      
                                         <ul class="social-team flex-five bg-8">
                                             <li>
@@ -844,8 +854,13 @@
                                         <p class="job">Apps Designer</p>
                                     </div>
                                     <div class="image relative">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a href="{{ url_for('team_details') }}">
                                             <img src="./assets/images/team/team3.jpg" alt="image">
+<!-- ======= -->
+                                        <a href="team-details.html">
+                                            <img src="{{ url_for('static', filename='images/team/team3.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         </a>                                      
                                         <ul class="social-team flex-five bg-8">
                                             <li>
@@ -873,8 +888,13 @@
                                         <p class="job">Designer Manager</p>
                                     </div>
                                     <div class="image relative">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a href="{{ url_for('team_details') }}">
                                             <img src="./assets/images/team/team4.jpg" alt="image">
+<!-- ======= -->
+                                        <a href="team-details.html">
+                                            <img src="{{ url_for('static', filename='images/team/team4.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         </a> 
                                         
                                         <ul class="social-team flex-five bg-8">
@@ -979,8 +999,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="wcus-section4-image relative">
-                                    <img src="./assets/images/page/w-c-us-home4.jpg" alt="image" class="wcus-h41">
-                                    <img src="./assets/images/page/wcus-h4-2.png" alt="image" class="wcus-h42">
+                                    <img src="{{ url_for('static', filename='images/page/w-c-us-home4.jpg') }}" alt="image" class="wcus-h41">
+                                    <img src="{{ url_for('static', filename='images/page/wcus-h4-2.png') }}" alt="image" class="wcus-h42">
                                     <div class="clip"></div>
                                 </div>
                             </div>
@@ -994,7 +1014,7 @@
                         <div class="row">
                             <div class="col-lg-2">
                                 <div class="image-faq-left">
-                                    <img src="./assets/images/page/faq-h41.jpg" alt="image">
+                                    <img src="{{ url_for('static', filename='images/page/faq-h41.jpg') }}" alt="image">
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -1102,7 +1122,7 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="image-faq-right">
-                                    <img src="./assets/images/page/faq-h42.jpg" alt="image">
+                                    <img src="{{ url_for('static', filename='images/page/faq-h42.jpg') }}" alt="image">
                                 </div>
                             </div>
                         </div>
@@ -1137,7 +1157,7 @@
                                                     see the world, not so the world can see you.
                                                 </p>
                                                 <div class="testimonial-bottom flex-two">
-                                                    <img src="./assets/images/brand/test-h4.png" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/brand/test-h4.png') }}" alt="image">
                                                     <div class="review">
                                                         <i class="icon-start"></i>
                                                         <i class="icon-start"></i>
@@ -1160,7 +1180,7 @@
                                                     see the world, not so the world can see you.
                                                 </p>
                                                 <div class="testimonial-bottom flex-two">
-                                                    <img src="./assets/images/brand/test-h4.png" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/brand/test-h4.png') }}" alt="image">
                                                     <div class="review">
                                                         <i class="icon-start"></i>
                                                         <i class="icon-start"></i>
@@ -1183,7 +1203,7 @@
                                                     see the world, not so the world can see you.
                                                 </p>
                                                 <div class="testimonial-bottom flex-two">
-                                                    <img src="./assets/images/brand/test-h4.png" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/brand/test-h4.png') }}" alt="image">
                                                     <div class="review">
                                                         <i class="icon-start"></i>
                                                         <i class="icon-start"></i>
@@ -1215,7 +1235,7 @@
                                     </li>
                                 </ul>
                                 <div class="service-cta ">
-                                    <img src="./assets/images/page/chat1.png" alt="image">
+                                    <img src="{{ url_for('static', filename='images/page/chat1.png') }}" alt="image">
                                     <p class="font-man">Get Free Consultations For Solutions</p>
                                     <a href="#">Get A Quote <i class="icon-right-icon"></i></a>
                                 </div>
@@ -1330,7 +1350,7 @@
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".3s">
                                 <div class="tf-blog-style3 mr-3em bg-sd">
                                     <a href="#" class="image">
-                                        <img src="./assets/images/blog/blog-h41.jpg" alt="image">
+                                        <img src="{{ url_for('static', filename='images/blog/blog-h41.jpg') }}" alt="image">
                                     </a>
                                     <div class="content style2">
                                         <span class="date font-man texts-blue">October 25, 2025</span>
@@ -1346,8 +1366,13 @@
                             </div>
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".4s" >
                                 <div class="tf-blog-style3 bg-sd">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                     <a href="{{ url_for('blog_single') }}" class="image">
                                         <img src="./assets/images/blog/blog-h42.jpg" alt="image">
+<!-- ======= -->
+                                    <a href="blog-details.html" class="image">
+                                        <img src="{{ url_for('static', filename='images/blog/blog-h42.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                     </a>
                                     <div class="content style2">
                                         <span class="date font-man texts-blue">October 25, 2025</span>
@@ -1361,8 +1386,13 @@
                             </div>
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".5s">
                                 <div class="tf-blog-style3 ml-3em bg-sd">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                     <a href="{{ url_for('blog_single') }}" class="image">
                                         <img src="./assets/images/blog/blog-h43.jpg" alt="image">
+<!-- ======= -->
+                                    <a href="blog-details.html" class="image">
+                                        <img src="{{ url_for('static', filename='images/blog/blog-h43.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                     </a>
                                     <div class="content style2">
                                         <span class="date font-man texts-blue">October 25, 2025</span>
@@ -1389,62 +1419,62 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br1.png" alt="image">
-                                                <img src="./assets/images/brand/brh11.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br1.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/brh11.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br4.png" alt="image">
-                                                <img src="./assets/images/brand/br-h12.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br4.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h12.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br5.png" alt="image">
-                                                <img src="./assets/images/brand/br-h14.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br5.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h14.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br7.png" alt="image">
-                                                <img src="./assets/images/brand/br-h13.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br7.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h13.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br10.png" alt="image">
-                                                <img src="./assets/images/brand/br-h15.png" alt="image"  class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br10.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h15.png') }}" alt="image"  class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br1.png" alt="image">
-                                                <img src="./assets/images/brand/brh11.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br1.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/brh11.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br4.png" alt="image">
-                                                <img src="./assets/images/brand/br-h12.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br4.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h12.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br5.png" alt="image">
-                                                <img src="./assets/images/brand/br-h14.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br5.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h14.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br7.png" alt="image">
-                                                <img src="./assets/images/brand/br-h13.png" alt="image" class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br7.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h13.png') }}" alt="image" class="first">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="brand-item flex-five effect-1">
-                                                <img src="./assets/images/brand/br10.png" alt="image">
-                                                <img src="./assets/images/brand/br-h15.png" alt="image"  class="first">
+                                                <img src="{{ url_for('static', filename='images/brand/br10.png') }}" alt="image">
+                                                <img src="{{ url_for('static', filename='images/brand/br-h15.png') }}" alt="image"  class="first">
                                             </div>
                                         </div>
                                         
@@ -1501,7 +1531,7 @@
                     </div>
                     <div class="footer-main4 flex">
                         <div class="footer-item-logo">
-                            <img src="./assets/images/logo-footer3.png" alt="image" class="logo-footer">
+                            <img src="{{ url_for('static', filename='images/logo-footer3.png') }}" alt="image" class="logo-footer">
                             <p class="des">Sed ut persiciatis unde omnis natus voluptatem accusantium dolore</p>
                             <div class="follow-social">
                                 <h6 class="title">Follow Us</h6>

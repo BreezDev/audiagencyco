@@ -234,8 +234,13 @@
                             <div class="col-lg-8 col-12">
                                 <article class="side-blog mb-50 relative">
                                     <div class="blog-image overflow-hiden">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a class="post-thumbnail" href="{{ url_for('blog_single') }}">
                                             <img src="./assets/images/blog/blog1.jpg" alt="Image blog">
+<!-- ======= -->
+                                        <a class="post-thumbnail" href="blog-details.html">
+                                            <img src="{{ url_for('static', filename='images/blog/blog1.jpg') }}" alt="Image blog">
+<!-- >>>>>>> main -->
                                         </a>
                                     </div>
                                     <div class="blog-content content-grid">
@@ -274,8 +279,13 @@
                                 </article>
                                 <article class="side-blog mb-50 relative">
                                     <div class="blog-image overflow-hiden">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a class="post-thumbnail" href="{{ url_for('blog_single') }}">
                                             <img src="./assets/images/blog/blog2.jpg" alt="Image blog">
+<!-- ======= -->
+                                        <a class="post-thumbnail" href="blog-details.html">
+                                            <img src="{{ url_for('static', filename='images/blog/blog2.jpg') }}" alt="Image blog">
+<!-- >>>>>>> main -->
                                         </a>
                                     </div>
                                     <div class="blog-content content-grid">
@@ -314,8 +324,13 @@
                                 </article>
                                 <article class="side-blog mb-70 relative">
                                     <div class="blog-image overflow-hiden">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
                                         <a class="post-thumbnail" href="{{ url_for('blog_single') }}">
                                             <img src="./assets/images/blog/blog3.jpg" alt="Image blog">
+<!-- ======= -->
+                                        <a class="post-thumbnail" href="blog-details.html">
+                                            <img src="{{ url_for('static', filename='images/blog/blog3.jpg') }}" alt="Image blog">
+<!-- >>>>>>> main -->
                                         </a>
                                     </div>
                                     <div class="blog-content content-grid">
@@ -388,7 +403,7 @@
                                         <div class="widget-recent-post">
                                             <div class="recent-post-item flex-three mb-30">
                                                 <a href="#" class="image">
-                                                    <img src="./assets/images/blog/recent1.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/blog/recent1.jpg') }}" alt="image">
                                                 </a>
                                                 <div class="content">
                                                     <span class="date font-man">October 25, 2025</span>
@@ -397,7 +412,7 @@
                                             </div>
                                             <div class="recent-post-item flex-three mb-30">
                                                 <a href="#" class="image">
-                                                    <img src="./assets/images/blog/recent2.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/blog/recent2.jpg') }}" alt="image">
                                                 </a>
                                                 <div class="content">
                                                     <span class="date font-man">October 25, 2025</span>
@@ -406,7 +421,7 @@
                                             </div>
                                             <div class="recent-post-item flex-three">
                                                 <a href="#" class="image">
-                                                    <img src="./assets/images/blog/recent3.jpg" alt="image">
+                                                    <img src="{{ url_for('static', filename='images/blog/recent3.jpg') }}" alt="image">
                                                 </a>
                                                 <div class="content">
                                                     <span class="date font-man">October 25, 2025</span>
