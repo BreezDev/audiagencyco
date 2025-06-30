@@ -48,7 +48,7 @@
                                     <div class="header-left flex">
                                         <div class="logo-box">
                                             <div class="logo">
-                                                <a href="index.html">
+                                                <a href="{{ url_for('index') }}">
                                                     <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt="Logo">
                                                 </a>
                                             </div>
@@ -62,56 +62,56 @@
                                                         <li class="dropdown2 current">
                                                             <a href="#">Home</a>
                                                             <ul>
-                                                                <li><a href="index.html">Home 01</a></li>
-                                                                <li><a href="home2.html">Home 02</a></li>
-                                                                <li><a href="home3.html">Home 03</a></li>
-                                                                <li><a href="home4.html">Home 04</a></li>
-                                                                <li class="current"><a href="home5.html">Home 05</a></li>
-                                                                <li><a href="home6.html">Home 06</a></li>
+                                                                <li><a href="{{ url_for('index') }}">Home 01</a></li>
+                                                                <li><a href="{{ url_for('home2') }}">Home 02</a></li>
+                                                                <li><a href="{{ url_for('home3') }}">Home 03</a></li>
+                                                                <li><a href="{{ url_for('home4') }}">Home 04</a></li>
+                                                                <li class="current"><a href="{{ url_for('home5') }}">Home 05</a></li>
+                                                                <li><a href="{{ url_for('home6') }}">Home 06</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2"><a href="#">Company</a>
                                                             <ul>
-                                                                <li><a href="about-company.html">About Company</a>
+                                                                <li><a href="{{ url_for('about') }}">About Company</a>
                                                                 </li>
-                                                                <li><a href="team.html">Team Member</a></li>
-                                                                <li><a href="team-details.html">Team Details</a>
+                                                                <li><a href="{{ url_for('team') }}">Team Member</a></li>
+                                                                <li><a href="{{ url_for('team_details') }}">Team Details</a>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2">
                                                             <a href="#">Service</a>
                                                             <ul>
-                                                                <li><a href="service1.html">Service 01</a></li>
-                                                                <li><a href="service2.html">Service 02</a></li>
-                                                                <li><a href="service-details.html">Service Details</a></li>
+                                                                <li><a href="{{ url_for('service1') }}">Service 01</a></li>
+                                                                <li><a href="{{ url_for('service2') }}">Service 02</a></li>
+                                                                <li><a href="{{ url_for('servicedetails') }}">Service Details</a></li>
                                                             </ul>
                                                         </li>
                                                         
                                                         <li class="dropdown2"><a href="#">Project Grid</a>
                                                             <ul>
-                                                                <li><a href="project-grid.html">Project Grid</a></li>
-                                                                <li><a href="project-mansory.html">Project Masonry</a></li>
-                                                                <li><a href="project-slider.html">Project Slider</a></li>
-                                                                <li><a href="project-details.html">Project Details</a></li>
+                                                                <li><a href="{{ url_for('projectgrid') }}">Project Grid</a></li>
+                                                                <li><a href="{{ url_for('projectmansory') }}">Project Masonry</a></li>
+                                                                <li><a href="{{ url_for('projectslider') }}">Project Slider</a></li>
+                                                                <li><a href="{{ url_for('project') }}">Project Details</a></li>
                                                             </ul>
                                                         </li>
                                                         
                                                         <li class="dropdown2"><a href="#">Page</a>
                                                             <ul>
-                                                                <li><a href="faq.html">Faq Page</a></li>
-                                                                <li><a href="pricing.html">Price Page</a></li>
-                                                                <li><a href="404.html">404 Page</a></li>
+                                                                <li><a href="{{ url_for('faq') }}">Faq Page</a></li>
+                                                                <li><a href="{{ url_for('pricing') }}">Price Page</a></li>
+                                                                <li><a href="{{ url_for('error') }}">404 Page</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown2">
                                                             <a href="#">Blog</a>
                                                             <ul>
-                                                                <li><a href="blog.html">Blog Full</a></li>
-                                                                <li><a href="blog-style2.html">Blog List</a></li>
-                                                                <li><a href="blog-details.html">Blog Detail</a></li>
+                                                                <li><a href="{{ url_for('blog') }}">Blog Full</a></li>
+                                                                <li><a href="{{ url_for('blog_style2') }}">Blog List</a></li>
+                                                                <li><a href="{{ url_for('blog_single') }}">Blog Detail</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="contact-us.html">Contact</a></li>
+                                                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav>
@@ -152,7 +152,7 @@
                 <div class="mobile-menu">
                     <div class="menu-backdrop"></div>
                     <nav class="menu-box">
-                        <div class="nav-logo"><a href="index.html">
+                        <div class="nav-logo"><a href="{{ url_for('index') }}">
                                 <img src="{{ url_for('static', filename='images/logo-footer.png') }}" alt=""></a></div>
                         <div class="bottom-canvas">
                             <div class="menu-outer">
@@ -180,11 +180,11 @@
                                     </h1>
                                     <div class="btn-wrap flex-three">
                                         <div class="btn-main wow fadeInUpSmall" data-wow-delay=".4s">
-                                            <a href="service1.html" class="button-src">Explore Our Service <i
+                                            <a href="{{ url_for('service1') }}" class="button-src">Explore Our Service <i
                                                     class="icon-angle-right"></i></a>
                                         </div>
                                         <div class="btn-main wow fadeInUpSmall" data-wow-delay=".5s">
-                                            <a href="about-company.html" class="learn-more text-white">Learn More <i
+                                            <a href="{{ url_for('about') }}" class="learn-more text-white">Learn More <i
                                                     class="icon-angle-right"></i></a>
                                         </div>
                                     </div>
@@ -302,12 +302,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Design <span class="number">01</span></p>
-                                            <h3 class="title"><a href="service-details.html">Provide Professional Web Design</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Provide Professional Web Design</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
 
                                     </div>
@@ -317,12 +317,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Development <span class="number">02</span></p>
-                                            <h3 class="title"><a href="service-details.html">Provide Professional Web Development</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Provide Professional Web Development</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three wow fadeInUpSmall" data-wow-delay=".4s">
@@ -331,12 +331,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Marketing <span class="number">03</span></p>
-                                            <h3 class="title"><a href="service-details.html">Digital Marketing Strategy</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Digital Marketing Strategy</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three wow fadeInUpSmall" data-wow-delay=".5s">
@@ -345,12 +345,12 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Motion Design <span class="number">04</span></p>
-                                            <h3 class="title"><a href="service-details.html">3D Design, Motions & Animations</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">3D Design, Motions & Animations</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                     <div class="service-item flex-three wow fadeInUpSmall" data-wow-delay=".6s">
@@ -359,18 +359,18 @@
                                         </div>
                                         <div class="content">
                                             <p class="category">Content <span class="number">05</span></p>
-                                            <h3 class="title"><a href="service-details.html">Content Writing & Email Marketing</a></h3>
+                                            <h3 class="title"><a href="{{ url_for('servicedetails') }}">Content Writing & Email Marketing</a></h3>
                                         </div>
                                         <p class="des">Sed perspiciatis unde omnis natus voluptatem accusantium
                                             doloremque laudantium, totam rem aperiam</p>
                                         <div class="btn-main">
-                                            <a href="service-details.html" class="btn-service"><i class="icon-arrow-rights"></i></a>
+                                            <a href="{{ url_for('servicedetails') }}" class="btn-service"><i class="icon-arrow-rights"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 center wow fadeInUpSmall" data-wow-delay=".3s">
-                                <a href="service-details.html" class="button-src">View All Services <i class="icon-angle-right"></i></a>
+                                <a href="{{ url_for('servicedetails') }}" class="button-src">View All Services <i class="icon-angle-right"></i></a>
                             </div>
                         </div>
 
@@ -468,17 +468,22 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case1.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case1.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Professional Website Design</a>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Professional Website Design</a>
                                                         </h3>
                                                         <p>Web Design & Development</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -487,17 +492,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case2.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case2.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Travel & Tour Mobile Apps
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Travel & Tour Mobile Apps
                                                                 Design</a></h3>
                                                         <p>Mobile Apps Design</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -506,17 +516,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case3.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case3.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Professional Website Design</a>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Professional Website Design</a>
                                                         </h3>
                                                         <p>Web Design & Development</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -525,17 +540,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case1.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case1.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Professional Website Design</a>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Professional Website Design</a>
                                                         </h3>
                                                         <p>Web Design & Development</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -544,17 +564,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case2.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case2.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Travel & Tour Mobile Apps
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Travel & Tour Mobile Apps
                                                                 Design</a></h3>
                                                         <p>Mobile Apps Design</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -563,17 +588,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="tf-portfolio">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                                <a href="{{ url_for('project') }}" class="image">
+                                                    <img src="./assets/images/image-box/case3.jpg" alt="image">
+<!-- ======= -->
                                                 <a href="project-details.html" class="image">
                                                     <img src="{{ url_for('static', filename='images/image-box/case3.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                                 </a>
                                                 <div class="content">
                                                     <div class="inner-title">
-                                                        <h3 class="title"><a href="project-details.html">Professional Website Design</a>
+                                                        <h3 class="title"><a href="{{ url_for('project') }}">Professional Website Design</a>
                                                         </h3>
                                                         <p>Web Design & Development</p>
                                                     </div>
                                                     <div class="btn-main">
-                                                        <a href="project-details.html" class="link-portfolio"><i
+                                                        <a href="{{ url_for('project') }}" class="link-portfolio"><i
                                                                 class="icon-arrow-rights"></i></a>
                                                     </div>
                                                 </div>
@@ -1004,22 +1034,27 @@
                                 </div>
                             </div>
                             <div class="col-md-5 al-i-end flex-six btn-read-more-blog wow fadeInUpSmall" data-wow-delay=".3s">
-                                <a href="blog-style2.html" class="button-src">View All News <i class="icon-angle-right"></i></a>
+                                <a href="{{ url_for('blog_style2') }}" class="button-src">View All News <i class="icon-angle-right"></i></a>
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".2s">
                                 <div class="tf-blog-style3 ">
+<!-- <<<<<<< code/x/update-redirects-to-specific-routes -->
+                                    <a href="{{ url_for('blog_single') }}" class="image relative">
+                                        <img src="./assets/images/blog/blog-h51.jpg" alt="image">
+<!-- =======/ -->
                                     <a href="blog-details.html" class="image relative">
                                         <img src="{{ url_for('static', filename='images/blog/blog-h51.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         <span class="date-ab">25 Dec</span>
                                     </a>
                                     <div class="content style3">
                                         <span class="date font-man texts-blue">Product Design</span>
-                                        <h3 class="title"><a href="blog-details.html">IT Service Case Studies Accelerating
+                                        <h3 class="title"><a href="{{ url_for('blog_single') }}">IT Service Case Studies Accelerating
                                                 Business Fly Success Tech</a></h3>
                                                 <div class="btn-wrap-link">
-                                                    <a href="blog-details.html" class="read-more">Read More </a><i class="icon-right-icon"></i>
+                                                    <a href="{{ url_for('blog_single') }}" class="read-more">Read More </a><i class="icon-right-icon"></i>
                                                 </div>
                                         
                                     </div>
@@ -1027,16 +1062,21 @@
                             </div>
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".3s">
                                 <div class="tf-blog-style3">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                    <a href="{{ url_for('blog_single') }}" class="image relative">
+                                        <img src="./assets/images/blog/blog-h52.jpg" alt="image">
+<!-- ======= -->
                                     <a href="blog-details.html" class="image relative">
                                         <img src="{{ url_for('static', filename='images/blog/blog-h52.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         <span class="date-ab">25 Dec</span>
                                     </a>
                                     <div class="content style3">
                                         <span class="date font-man texts-blue">Product Design</span>
-                                        <h3 class="title"><a href="blog-details.html">IT Service Case Studies Accelerating
+                                        <h3 class="title"><a href="{{ url_for('blog_single') }}">IT Service Case Studies Accelerating
                                                 Business Fly Success Tech</a></h3>
                                                 <div class="btn-wrap-link">
-                                                    <a href="blog-details.html" class="read-more">Read More </a><i class="icon-right-icon"></i>
+                                                    <a href="{{ url_for('blog_single') }}" class="read-more">Read More </a><i class="icon-right-icon"></i>
                                                 </div>
 
                                     </div>
@@ -1044,16 +1084,21 @@
                             </div>
                             <div class="col-md-4 wow fadeInUpSmall" data-wow-delay=".4s">
                                 <div class="tf-blog-style3">
+<!-- <<<<<<< codex/update-redirects-to-specific-routes -->
+                                    <a href="{{ url_for('blog_single') }}" class="image relative">
+                                        <img src="./assets/images/blog/blog-h53.jpg" alt="image">
+<!-- ======= -->
                                     <a href="blog-details.html" class="image relative">
                                         <img src="{{ url_for('static', filename='images/blog/blog-h53.jpg') }}" alt="image">
+<!-- >>>>>>> main -->
                                         <span class="date-ab">25 Dec</span>
                                     </a>
                                     <div class="content style3">
                                         <span class="date font-man texts-blue">Product Design</span>
-                                        <h3 class="title"><a href="blog-details.html">IT Service Case Studies Accelerating
+                                        <h3 class="title"><a href="{{ url_for('blog_single') }}">IT Service Case Studies Accelerating
                                                 Business Fly Success Tech</a></h3>
                                                 <div class="btn-wrap-link">
-                                                    <a href="blog-details.html" class="read-more">Read More </a><i class="icon-right-icon"></i>
+                                                    <a href="{{ url_for('blog_single') }}" class="read-more">Read More </a><i class="icon-right-icon"></i>
                                                 </div>
 
                                     </div>
